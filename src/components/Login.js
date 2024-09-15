@@ -11,12 +11,12 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post("http://localhost:5000/api/auth/login", { email, password });
-      const { role,success } = res.data;
+      const { role,success,id } = res.data;
 
       if (role === "User") {
-        navigate("/UserDashboard"); // Updated to use navigate
+        navigate("/UserDashboard",{ state:  {id } }); // Updated to use navigate
       } else if (role === "Provider") {
-        navigate("/ProviderDashboard"); // Updated to use navigate
+        navigate("/ProviderDashboard",{ state: {id}  }); // Updated to use navigate
       }
     } catch (error) {
       console.error("Login Error", error);

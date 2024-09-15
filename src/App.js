@@ -5,6 +5,8 @@ import Signup from "./components/Signup";
 import UserDashboard from "./components/UserDashboard";
 import ProviderDashboard from "./components/ProviderDashboard";
 import MainPage from "./components/MainPage";
+import AddMovie from "./components/AddMovie";
+import MovieList from "./components/MovieList";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
   {
     path : '/ProviderDashboard',
     element : <ProviderDashboard></ProviderDashboard>
+  },
+  {
+    path: '/add-movie',
+    element: <AddMovie />
+  },
+  {
+    path: '/movie-list',
+    element: <MovieList/>
   }
 ])
 
