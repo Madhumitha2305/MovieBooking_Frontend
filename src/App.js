@@ -1,34 +1,65 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AdminSignIn from './components/AdminSignIn';
-import UserSignIn from './components/UserSignIn';
-import MovieList from './components/MovieList';
-import UserMovieList from './components/UserMovieList';
-import AdminMovieManagement from './components/AdminMovieManagement';
-import './App.css';
+import React from "react";
+import { createBrowserRouter, RouterProvider,Router,Switch,Route} from 'react-router-dom';
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import UserDashboard from "./components/UserDashboard";
+import ProviderDashboard from "./components/ProviderDashboard";
+import MainPage from "./components/MainPage";
 
 const router = createBrowserRouter([
   {
 
-    path: '/admin-signin',
-    
+    path: '/',
+    element: <MainPage></MainPage>
+  },
+  {
+    path : '/Signup',
+    element : <Signup></Signup>
+  },
+  {
+    path: '/Login',
+    element : <Login></Login>,
+  },
+  {
+    path: '/UserDashboard',
+    element : <UserDashboard></UserDashboard>
+  },
+  {
+    path : '/ProviderDashboard',
+    element : <ProviderDashboard></ProviderDashboard>
   }
 ])
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Switch>
-          <Route path="/admin-signin" component={AdminSignIn} />
-          <Route path="/user-signin" component={UserSignIn} />
-          <Route path="/movies" component={MovieList} />
-          <Route path="/user-movies" component={UserMovieList} />
-          <Route path="/admin" component={AdminMovieManagement} />
-        </Switch>
-      </div>
-    </Router>
+    // <Router>
+    //   <div className="app">
+    //     <Switch>
+    //     <Route exact path="/" component={Login} />
+    //       <Route path="/signup" component={Signup} />
+    //       <Route path="/user-dashboard" component={UserDashboard} />
+    //       <Route path="/provider-dashboard" component={ProviderDashboard} />
+    //     </Switch>
+    //   </div>
+    // </Router>
+    <>
+      <RouterProvider router={router}/>
+    </>
   );
 }
+// function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <Switch>
+//           <Route exact path="/" component={Login} />
+//           <Route path="/signup" component={Signup} />
+//           <Route path="/user-dashboard" component={UserDashboard} />
+//           <Route path="/provider-dashboard" component={ProviderDashboard} />
+//         </Switch>
+//       </div>
+//     </Router>
+//   );
+// }
 
 export default App;
