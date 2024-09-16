@@ -11,25 +11,28 @@ Frontend: React.js with Bootstrap for styling.
 Backend: Node.js and Express.js.
 Database: MongoDB for storing user and movie data.
 Axios: For making API requests.
-# Prerequisites
-Before you begin, ensure you have the following installed on your local machine:
 
-Node.js
-MongoDB (running locally or a cloud instance)
+# contribution of each team member  
+V MADHUMITHA - frontend , integration  
+PADMAPRIYA R - backend , integration  
+
+# Prerequisites
+Before you begin, ensure you have the following installed on your local machine:  
+Node.js  
+MongoDB (running locally or a cloud instance)  
 # Getting Started
 ## 1. Clone the repository:
 
-git clone https://github.com/Madhumitha2305/MovieBooking_Frontend.git
-git clone https://github.com/padmapriyar04/MovieBooking_Backend.git
-cd movie-booking-system
+git clone https://github.com/Madhumitha2305/MovieBooking_Frontend.git .  
+git clone https://github.com/padmapriyar04/MovieBooking_Backend.git .  
+and change the directory.
 ## 2. Install dependencies:
 ### Backend
-
-cd backend
-npm install
+cd backend  
+npm install  
 ### Frontend
-cd frontend
-npm install
+cd frontend  
+npm install  
 ## 3. Set up environment variables:
 Create a .env file in the backend directory and configure it with your environment variables:
 
@@ -59,34 +62,32 @@ Here are some of the main API routes for this system:
 POST /api/auth/register: Register a new user or movie provider.
 POST /api/auth/login: Log in a user or movie provider.
 ### Movies
-GET /api/movies/: Get all movies.
-GET /api/movies/provider/:providerId: Get movies added by a specific movie provider.
-POST /api/movies/: Add a new movie (Movie Provider).
-PUT /api/movies/:id: Update a movie by ID (Movie Provider).
-DELETE /api/movies/:id: Delete a movie by ID (Movie Provider).
+GET /api/movies/: Get all movies.  
+GET /api/movies/provider/:providerId: Get movies added by a specific movie provider.  
+POST /api/movies/: Add a new movie (Movie Provider).  
+PUT /api/movies/:id: Update a movie by ID (Movie Provider).  
+DELETE /api/movies/:id: Delete a movie by ID (Movie Provider).  
 ## Project Structure
-
-
 backend/                # Backend files
-│   ├── controllers/        # API controllers
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   └── server.js           # Main backend server
-frontend/               # Frontend files
-│   ├── public/             # Public directory
-│   ├── src/                # Source code (React components)
-│   ├── App.js              # Main app entry point
-│   └── index.js            # React DOM rendering
-└── README.md               # Project documentation
-# How to Use
-### For Users:
+│   ├── controllers/        # API controllers  
+│   ├── models/             # Mongoose models   
+│   ├── routes/             # API routes  
+│   └── server.js           # Main backend server  
+frontend/               # Frontend files  
+│   ├── public/             # Public directory  
+│   ├── src/                # Source code (React components)  
+│   ├── App.js              # Main app entry point  
+│   └── index.js            # React DOM rendering  
+└── README.md               # Project documentation  
+# How to Use  
+### For Users:  
 Visit the signup page and register as a user.
 Log in to your account and view the list of available movies.
 Book movies as per availability.
 ### For Movie Providers:
 Register as a movie provider during the signup process.
 Log in to your provider dashboard.
-Add, edit, or delete movies from the dashboard.
+Add, edit, or delete movies from the dashboard.  
 ### Contributing
 If you'd like to contribute, please fork the repository and submit a pull request. You can also report any issues or suggest new features in the Issues section.
 
