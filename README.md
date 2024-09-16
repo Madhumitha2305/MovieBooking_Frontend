@@ -20,6 +20,7 @@ MongoDB (running locally or a cloud instance)
 ## 1. Clone the repository:
 
 git clone https://github.com/Madhumitha2305/MovieBooking_Frontend.git
+git clone https://github.com/padmapriyar04/MovieBooking_Backend.git
 cd movie-booking-system
 ## 2. Install dependencies:
 ### Backend
