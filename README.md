@@ -27,8 +27,6 @@ cd movie-booking-system
 cd backend
 npm install
 ### Frontend
-bash
-Copy code
 cd frontend
 npm install
 ## 3. Set up environment variables:
